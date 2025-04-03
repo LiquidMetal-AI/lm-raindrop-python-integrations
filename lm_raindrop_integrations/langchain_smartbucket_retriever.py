@@ -9,7 +9,7 @@ import os
 import json
 import uuid
 
-class SmartBucketRetriever(BaseRetriever, BaseModel):
+class LangchainSmartBucketRetriever(BaseRetriever, BaseModel):
     """Retriever that uses the SmartBucket API for semantic search.
     
     This retriever uses the SmartBucket API to perform semantic search across your saved documents.
@@ -18,10 +18,10 @@ class SmartBucketRetriever(BaseRetriever, BaseModel):
     Example:
         .. code-block:: python
 
-            from smartbucket_retriever import SmartBucketRetriever
+            from lm_raindrop_integrations import LangchainSmartBucketRetriever
             
             # Will try to get API key from RAINDROP_API_KEY env var if not provided
-            retriever = SmartBucketRetriever(api_key="your-api-key")  # or just SmartBucketRetriever()
+            retriever = LangchainSmartBucketRetriever(api_key="your-api-key")  # or just LangchainSmartBucketRetriever()
             documents = retriever.invoke("your query")  # Use invoke instead of get_relevant_documents
 
     Args:

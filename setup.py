@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="lm-raindrop-integrations",
-    version="0.0.1",
+    version="0.1.3",
     author="LiquidMetal",
     author_email="customer@liquidmetal.ai",
     description="Python SDK for Integrations with LiquidMetal products",

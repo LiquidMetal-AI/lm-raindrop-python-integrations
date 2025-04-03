@@ -19,11 +19,11 @@ Raindrop SmartBuckets currently supports the following integrations:
 Example usage with LangChain:
 
 ```python
-from lm_raindrop_integrations.langchain import SmartBucketRetriever
+from lm_raindrop_integrations import LangchainSmartBucketRetriever
 import os
 
 # Initialize the retriever
-retriever = SmartBucketRetriever(api_key="your-api-key")  # or use RAINDROP_API_KEY env var
+retriever = LangchainSmartBucketRetriever(api_key="your-api-key")  # or use RAINDROP_API_KEY env var
 
 # Search for documents
 results = retriever.invoke("What is machine learning?")
@@ -36,5 +36,4 @@ for doc in results:
     print("---")
 ```
 
-For more advanced usage, see the [examples](examples/) directory.
 
