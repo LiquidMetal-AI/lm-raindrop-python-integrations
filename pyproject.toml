@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lm-raindrop-integrations"
-version = "0.1.3"
+version = "0.1.4"
 authors = [
     { name="LiquidMetal", email="customer@liquidmetal.ai" },
 ]
